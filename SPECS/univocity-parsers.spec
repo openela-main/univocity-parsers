@@ -2,7 +2,7 @@
 
 Name:           univocity-parsers
 Version:        2.9.1
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Collection of parsers for Java
 License:        ASL 2.0
 URL:            https://github.com/uniVocity/univocity-parsers
@@ -51,6 +51,9 @@ API documentation for %{name}.
 %license LICENSE-2.0.html
 
 %changelog
+* Wed Nov 20 2024 Marián Konček <mkoncek@redhat.com> - 2.9.1-6
+- Rebuild with regenerated Requires on Java
+
 * Tue Aug 10 2021 Mohan Boddu <mboddu@redhat.com> - 2.9.1-5
 - Rebuilt for IMA sigs, glibc 2.34, aarch64 flags
   Related: rhbz#1991688
