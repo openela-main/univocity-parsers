@@ -2,11 +2,12 @@
 
 Name:           univocity-parsers
 Version:        2.9.1
-Release:        6%{?dist}
+Release:        8%{?dist}
 Summary:        Collection of parsers for Java
 License:        ASL 2.0
 URL:            https://github.com/uniVocity/univocity-parsers
 BuildArch:      noarch
+ExclusiveArch:  aarch64 ppc64le s390x x86_64 noarch
 
 Source0:        https://github.com/uniVocity/univocity-parsers/archive/v%{version}.tar.gz
 
@@ -51,6 +52,12 @@ API documentation for %{name}.
 %license LICENSE-2.0.html
 
 %changelog
+* Sat Nov 23 2024 Marián Konček <mkoncek@redhat.com> - 2.9.1-8
+- Add noarch to ExclusiveArch
+
+* Fri Nov 22 2024 Marián Konček <mkoncek@redhat.com> - 2.9.1-7
+- Disable building on i686
+
 * Wed Nov 20 2024 Marián Konček <mkoncek@redhat.com> - 2.9.1-6
 - Rebuild with regenerated Requires on Java
 
